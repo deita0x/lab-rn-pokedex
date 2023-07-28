@@ -1,8 +1,13 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
+import AppNavigator from './src/navigation';
 
 function App() {
-  return <SafeAreaView style={styles.container}></SafeAreaView>;
+  return (
+    <SafeAreaView style={styles.container}>
+      <AppNavigator />
+    </SafeAreaView>
+  );
 }
 
 const styles = StyleSheet.create({
