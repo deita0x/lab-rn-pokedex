@@ -9,7 +9,9 @@ const Stack = createStackNavigator<RootStackParamList>();
 export default function AppNavigator() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      <Stack.Navigator
+        initialRouteName="Home"
+        screenOptions={{headerShown: false}}>
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="PokemonDetail" component={PokemonDetailScreen} />
         <Stack.Screen name="AddPokemon" component={AddPokemonScreen} />
